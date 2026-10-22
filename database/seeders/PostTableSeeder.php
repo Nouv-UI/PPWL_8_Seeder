@@ -1,0 +1,22 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class PostTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        for ($i = 1; $i <= 25; $i++) {
+            Post:create([
+                'title'         => 'Post judul ke-' . $i,
+                'description'   => 'Deskripsi ke-' . $i,
+            ]);
+        }
+    }
+}
