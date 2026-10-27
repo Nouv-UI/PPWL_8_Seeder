@@ -9,6 +9,7 @@ class PostRandomSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     * seeder
      */
     public function run(): void
     {
